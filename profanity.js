@@ -13,7 +13,7 @@ function beep(text) {
     const beepLen = text.length-2;
     let result = first;
     let lastChar = '';
-    for (let i = 0; i <= beepLen; i++) {
+    for (let i = 0; i < beepLen; i++) {
         let char = arraySample(chars);
         while (char === lastChar) char = arraySample(chars);
         result += char;
