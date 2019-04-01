@@ -37,8 +37,8 @@ module.exports = async function(input) {
                     isDirty = true;
                 } else return text;
             } else {
-                for (const {lex, qual} of analysis) {
-                    if (qual !== 'bastard' && !badWords.includes(lex.toLowerCase())) continue;
+                for (const {lex} of analysis) {
+                    if (!badWords.includes(lex.toLowerCase())) continue;
                     profane = true;
                     isDirty = true;
                     break;
